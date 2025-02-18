@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Sales</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            scrollbar-width: 0;
+            
+
+        }
+       
+        
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(252, 252, 252);
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 10px;
+            /* background-image: url(mq7.jpg);
+            background-size: cover; */
+           
+        }
+
+        .box{
+            width: 250px;
+            min-width: 250px;
+            min-height: 400px;
+            max-height: 400px;
+            background-color: rgb(255, 255, 255);
+            margin: 15px;
+            border-radius: 25px 25px 0px 0px;
+            box-shadow: 10px 10px 5px 5px rgba(105, 104, 104, 0.756);
+        }
+
+        @media(max-width:1115px)
+        {
+            .container{
+                
+                display: flex;
+                flex-direction: column;
+                overflow: scroll;
+               scrollbar-width: 0;
+            }
+        }
+
+        @media(max-width:600px)
+        {
+            .container{
+                
+                display: flex;
+                flex-direction: row;
+                 overflow: scroll;
+                /* scrollbar-width: 0; */
+            }
+        }
+        .b1{
+           width: 100%;
+            background-color: rgba(128, 128, 128, 0.185);
+            margin-bottom: 5px;
+            border-radius: 25px;
+            
+        }
+        .img{
+            width:200px;        
+                    
+        }
+        .img2{
+            width: 275px;
+        }
+        .img3{
+            width: 166px;
+        }
+        .img4{
+            width: 264px;
+        }
+
+        .p1{
+            margin-left: 20px;
+            
+        }
+        .btn{
+            border: none;
+            padding: 10px;
+            width: 70%;
+            margin: 5px;
+            border-radius: 25px;
+            margin-bottom: 8px;
+            margin-left: 8px;
+            opacity: 0;
+            cursor: pointer;
+            background-color: rgba(128, 128, 128, 0.185);
+            
+        }
+        .heart{
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .box:hover{
+            
+            .btn{
+                transition: 0.6s all ease;
+                opacity: 1;
+            }
+
+            .heart{
+                transition: 0.6s all ease;
+                opacity: 1;
+            }
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+   
+   
+    <div class="container">
+
+        <div class="box box1">
+            <div class="b1">
+            <img src="images/mq2-removebg.png" class="img">
+            
+        </div>
+        <div class="p1">
+            <p style="font-size: 15px; margin-bottom: 2px;"><b>Roadster</b></p>
+            <p style="font-size: 12px; margin-bottom: 5px;color: gray; ">New Arrivals Women Office Wear</p>
+            <p><b style="font-size: 18px;margin-top: 10px;">$10</b> <span style="font-size: 13px;color: grey;">$18</span></p>
+            <button class="btn">Add To Cart</button>
+            <i class="fa-regular fa-heart  heart"></i>
+        </div>
+        </div>
+        <div class="box box2">
+            <div class="b1">
+                <img src="images/mq4-removebg-preview.png" class="img2">
+                
+            </div>
+            <div class="p1">
+                <p style="font-size: 15px; margin-bottom: 2px;"><b>Wrogn</b></p>
+                <p style="font-size: 12px; margin-bottom: 5px;color: gray; ">OutDoor Casual Outfit</p>
+                <p><b style="font-size: 18px;margin-top: 10px;">$18</b> <span style="font-size: 13px;color: grey;">$23</span></p>
+                <button class="btn">Add To Cart</button>
+                <i class="fa-regular fa-heart  heart"></i>
+            </div>
+
+        </div>
+        <div class="box box3">
+            <div class="b1">
+                <img src="images/mq5-removebg-preview.png" class="img3">
+                
+            </div>
+            <div class="p1">
+                <p style="font-size: 15px; margin-bottom: 2px;"><b>Mast & Harbour</b></p>
+                <p style="font-size: 12px; margin-bottom: 5px;color: gray; ">Mens's Stylish Semi Formals </p>
+                <p><b style="font-size: 18px;margin-top: 10px;">$20</b> <span style="font-size: 13px;color: grey;">$35</span></p>
+                <button class="btn">Add To Cart</button>
+                <i class="fa-regular fa-heart  heart"></i>
+            </div>
+
+        </div>
+        <div class="box box4">
+            <div class="b1">
+                <img src="images/mq7-removebg-preview.png" class="img4">
+                
+            </div>
+            <div class="p1">
+                <p style="font-size: 15px; margin-bottom: 2px;"><b>H&M</b></p>
+                <p style="font-size: 12px; margin-bottom: 5px;color: gray; ">New Collection Street Wear</p>
+                <p><b style="font-size: 18px;margin-top: 10px;">$27</b> <span style="font-size: 13px;color: grey;">$35</span></p>
+                <button class="btn">Add To Cart</button>
+                <i class="fa-regular fa-heart  heart"></i>
+            </div>
+
+        </div>
+
+    
+</div>
+    
+</body>
+</html>
